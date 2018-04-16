@@ -1,7 +1,27 @@
 @import "basic/variables";
 @import "basic/mixins";
+@import "basic/animations";
+@import "general";
 
-* {
-    margin: 0; 
-    padding: 0;
-}
+
+@import "components/content";
+@import "components/brand-logo";
+@import "components/brand-title";
+@import "components/nav-simple";
+@import "components/nav-main";
+@import "components/video-background";
+@import "components/large-title";
+@import "components/sub-title";
+@import "components/paragraph";
+@import "components/latest-project";
+@import "components/button";
+@import "components/project-box";
+@import "components/spinning-animation";
+@import "components/certifications-box";
+@import "components/popgallery";
+
+@import "section-home";
+@import "section-splash";
+@import "section-about";
+@import "section-projects";
+@import "section-contact";

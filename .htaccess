@@ -49,5 +49,5 @@ SetEnvIfNoCase Request_URI "\.(?:gif|jpe?g|png)$" no-gzip
 
 RewriteEngine On
 
-ErrorDocument 404 /camomile/404.html
-ErrorDocument 403 /camomile/404.html
+ErrorDocument 404 /webul/404.html
+ErrorDocument 403 /webul/404.html

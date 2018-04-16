@@ -1,0 +1,38 @@
+* {margin: 0; padding: 0;}
+
+.bg-white {background-color: #fff;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+.text-normal {font-weight: normal;}
+.invisible {visibility: hidden;}
+
+
+body {
+    font-size: 1.5rem;    
+    font-family: $Font;
+    font-weight: lighter;
+    background-color: $MainBack; 
+    color: $MainColor;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+}
+
+.animate {visibility: hidden;}
+
+a {
+    color: $SimpleNavLink;
+
+    &:hover {
+        color: $Pink;
+        text-decoration: none;
+    }
+}
+
+.baguetteBox-button:focus {
+    outline: none;
+}
+
+

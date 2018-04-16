@@ -1,0 +1,22 @@
+.latest-project {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    max-width: 90%;
+
+    // &::after {
+    //     content: "";
+    //     width: attr(data-width);
+    //     height: 100px;
+    //     background: red;
+    //     display: block;
+
+    // }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

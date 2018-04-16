@@ -1,0 +1,19 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $TitleFont;
+
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $MainBack; 
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
+
+}

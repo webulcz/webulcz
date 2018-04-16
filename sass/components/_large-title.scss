@@ -1,0 +1,45 @@
+.large-title {
+    color: #fff;    
+    font-size: 4rem;
+    font-family: $TitleFont;
+    font-weight: normal;
+    padding-bottom: 2rem;
+
+    &--shrinked {
+        position: relative;
+        font-size: 3rem;
+        padding: 0.5rem 0 0 0;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+    &--pink {
+        color: $Pink;
+    }
+
+    &--light-pink {
+        color: $LightPink;
+    }
+
+    &--blue {
+        color: $Blue;
+    }
+
+    &--subtitle {
+        color: $Subtitle;
+    }
+
+    &--contented {
+        padding: 2rem 4rem;
+    }
+
+    &--colored {
+        background-color: $ContactBack;
+    }
+
+    &--on-right {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,14 @@
+.splash.fadeOut {
+    -webkit-animation: fadeOut 3s; /* Safari 4+ */
+    -moz-animation:    fadeOut 3s; /* Fx 5+ */
+    -o-animation:      fadeOut 3s; /* Opera 12+ */
+    animation:         fadeOut 3s; /* IE 10+, Fx 29+ */
+    animation-fill-mode: forwards;
+}
+
+.home.fadeIn {
+    -webkit-animation: fadeOut 3s; /* Safari 4+ */
+    -moz-animation:    fadeOut 3s; /* Fx 5+ */
+    -o-animation:      fadeOut 3s; /* Opera 12+ */
+    animation:         fadeOut 3s; /* IE 10+, Fx 29+ */
+}

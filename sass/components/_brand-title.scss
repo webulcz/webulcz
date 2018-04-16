@@ -1,0 +1,17 @@
+.brand-title {
+    color: $Pink;
+    font-family: $TitleFont;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+
+    span {color: #fff;}
+
+    &__subtitle {
+        color: $Subtitle;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}

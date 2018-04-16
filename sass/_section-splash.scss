@@ -1,0 +1,77 @@
+#splash {
+    position: fixed;
+    z-index: 11;
+    background-color: $MainBack;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.splash {
+    &.fadeOut {
+        -webkit-animation: fadeOut 2s; /* Safari 4+ */
+        -moz-animation:    fadeOut 2s; /* Fx 5+ */
+        -o-animation:      fadeOut 2s; /* Opera 12+ */
+        animation:         fadeOut 2s; /* IE 10+, Fx 29+ */     
+    }
+
+    &__cancel {
+        font-family: $CodeFont; 
+        position: absolute;
+        bottom: 1rem;
+        right: 3rem;
+        font-size: .7rem;
+    }
+
+    &__systemcode {
+        font-family: $CodeFont; 
+        font-size: 1rem; 
+        color: #979da7;  
+        width: 700px;
+    }
+
+    &--line {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &--blinking {
+        animation-name: blinkingAnimation;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 4;  
+        color: $CodePink;
+
+        @keyframes blinkingAnimation {
+            0% {opacity: 0;}
+            25% {opacity: 0;}
+            75% {opacity: 1;}
+            100% {opacity: 1;}
+            
+        }
+    }
+
+    &__line {
+        &--dolarsign::before {
+            content:"$";
+            display: inline-block;
+        }
+
+        &--cursor::after {
+            content:"_";
+            display: inline-block;
+        }
+    }
+
+    &__skip {
+        cursor: pointer;
+        border: none;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+.project-box {
+    display: grid;
+    grid-template-rows: 150px auto;
+    height: 100%;
+    position: relative;
+
+    &__top {
+        text-align: center;
+        position: relative;
+    }
+
+    &__bottom {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 5px; 
+            background-color: $Pink;
+            left: 50%;
+            
+        }
+    }
+
+    &__description {
+        width: 60%;
+        margin: 0 auto;
+        color: #fff;
+        padding: 2rem 0;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    &--vertical-bar {
+        position: relative;
+        z-index: -1;
+
+    }
+
+    &--pushed {
+        top: 110px;
+        transition: 0.5s ease-out;
+       
+    }
+
+    &--pushed:hover {
+        top: 30px;
+        cursor: pointer;
+
+        .project-box__top::before {
+            top: 0;
+            left: 47.5%;
+            content: "";
+            width: calc(5% + 4px);
+            height: 100%;
+            position: absolute;
+            border-bottom: 5px solid $Pink;
+            display: block;
+            z-index: 0;
+        }
+    }
+}

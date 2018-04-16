@@ -1,0 +1,116 @@
+.popgallery {
+
+    &--body-shrink {
+        height: 0; 
+        width: 0; 
+        overflow: hidden;
+
+        #baguetteBox-overlay {
+            overflow-y: auto;
+        }
+        #baguetteBox-overlay .full-image {
+            vertical-align:top
+        }
+
+        #baguetteBox-overlay .full-image img {
+            max-width: 90%;
+            max-height: inherit;
+        }
+
+        .baguetteBox-button {
+            position: fixed;
+        }
+
+    }
+
+    &__wrapper {
+        height: 0;
+        width: 0;
+    }
+
+    &__modal {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color:  $MainBack;
+        width: 100%; 
+        height: 100%;
+
+        &--hide {
+            display: none;
+        }
+    }
+
+    &__close {
+        position: relative;
+        background-color: $ContactBack;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        position: absolute;
+        z-index: 101;
+        width: 100%;
+        
+        &__button {
+            padding: 0.6rem 2rem;
+            display: inline-block;
+            cursor: pointer;
+
+            &::before {
+                content:"";
+                background: url("images/backarrow.svg") no-repeat 0px 0.25rem;
+                width: 30px;
+                height: 28px;
+                display: block;
+                float:left;
+                top: 0;
+                left: 0;
+                position: relative;
+
+            }
+        }
+    }
+
+    &__title {
+        padding: 0.6rem 2rem;
+        float: right; 
+        font-weight: 100;
+        color: $Pink;
+        font-style: normal;
+    }
+
+    &__content {
+        position: absolute;
+        height: 100%;
+        overflow-y: auto;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4rem 2rem 2rem 2rem;
+        top: 0;
+        left: 0;
+
+        &--wrap {
+            max-width: 1580px;
+            margin: 0 auto;
+        }
+
+        div {
+            padding: 0;
+        }
+
+    }
+
+    &__thumb {
+        
+        padding: 1px;
+        box-sizing: border-box;
+        display: block;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+}
+
