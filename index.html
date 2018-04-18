@@ -5,21 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Webdesign, graphic design, web development" >
-    <meta name="description" content="Webdesign and web development UL">
+    <meta name="description" content="Kompletní realizace webových stránek">
     <meta name="author" content="MK" >
     <meta name="copyright" content="WebUL.cz" >
     <meta name="robots" content="index, follow" >
-    <title>Website title</title>
+    <title>WEBUL - webdesign, webdevelopment</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/baguetteBox.min.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" media="async!" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/baguetteBox.min.css" media="async!" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/animate.min.css" media="async!" onload="this.media='all'">
     <link rel="stylesheet" href="./themes/maintheme/styles.css">
   </head>
-
+  
   <body>
-
     <!-- ============================== Navigation ============================== -->
     <div id="nav-icon1" class="animated fadeIn">
       <span></span>
@@ -30,10 +28,10 @@
     <div id="menuoverlay">
       <div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Úvod</a></li>
+          <li><a href="#about">Info</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </div>
     </div>
@@ -47,12 +45,12 @@
         <h1 class="brand-title animate" data-class="fadeInDown">WEB<span>UL</span></h1>
         <h2 class="brand-title__subtitle animate" data-class="fadeInUp">web development.</h2>
         <ul class="nav-simple animate" data-class="fadeInUp">
-          <li class="nav-simple__item"><a href="#about" class="nav-simple__link scrollspy">About</a></li>
-          <li class="nav-simple__item"><a href="#projects" class="nav-simple__link scrollspy">Projects</a></li>
-          <li class="nav-simple__item"><a href="#contact" class="nav-simple__link scrollspy">Contact</a></li>
+          <li class="nav-simple__item"><a href="#about" class="nav-simple__link scrollspy">Info</a></li>
+          <li class="nav-simple__item"><a href="#projects" class="nav-simple__link scrollspy">Projekty</a></li>
+          <li class="nav-simple__item"><a href="#contact" class="nav-simple__link scrollspy">Kontakt</a></li>
         </ul>
         <div class="video-background">
-          <video src="images/home-video.mp4" loop="" class="video-background__video" id="homevideo"></video>
+          <video data-rel="images/home-video.mp4" loop="" class="video-background__video" id="homevideo"></video>
         </div>        
       </div>
     </section>
@@ -60,7 +58,6 @@
     <!-- ================================ Splash ================================ -->
     <section id="splash" class="splash">
       <div class="wrapper">
-
         <div class="spin animate splash__skip" data-class="animated zoomIn">
           <div class="spin__wrapper">
             <div class="spin__content">
@@ -70,15 +67,14 @@
             </div>
           </div>
           <div class="spin__skip">
-            <p class="spin__skip--big"><strong>ESC</strong> to skip intro</p>
-            <p class="spin__skip--small">or wait to watch</span> 
+            <h2 class="spin__skip--big"><strong>ESC</strong> přerušit intro</h2>
+            <p class="spin__skip--small">nebo počkat a přehrát</p> 
           </div>
         </div>
-
         <div class="splash__systemcode">
-          <span class="splash__start-line invisible" id="splash__blink">webul workflow deployment:</span>
+          <span class="splash__start-line invisible" id="splash__blink">Webul workflow deployment:</span>
         </div>
-        <div class="splash--line splash__line1__command" data-text="git clone http://webulcz.github.io/webulcz"> </div>
+        <div class="splash--line splash__line1__command" data-text="git clone http://webulcz.github.io/starterpack"> </div>
         <div class="splash__systemcode splash__systemcode1">
           <span class="splash__systemcode1_result invisible"> repository cloned. On master branch.</span>
         </div>
@@ -90,8 +86,7 @@
         <div class="splash__systemcode splash__systemcode3">
           <span class="splash__systemcode3_result invisible">Environment ready. Dev server started. </span>
         </div>
-
-        <div class="splash__cancel splash__skip">Skip intro ESC</div>
+        <div class="d-none d-lg-block splash__cancel splash__skip">Přeskočit intro ESC</div>
       </div>
     </section>
 
@@ -99,33 +94,35 @@
     <section id="about">
       <div class="content content--left content__grid">
         <div class="wrapper">
-          <h2 class="large-title large-title--light-pink animate " data-class="fadeInUp">Hello,<br>glad to see you!</h2>
-          <p class="paragraph text-normal animate " data-class="fadeInLeft">
-            My name is Miroslav Kokalanov and I welcome you to my portfolio website.
-          </p>
+          <h2 class="large-title large-title--light-pink animate " data-class="fadeInUp">
+            Vítejte
+            <br class="d-none d-lg-inline">
+            na stránkách WEBUL
+          </h2>
           <p class="paragraph animate " data-class="fadeInRight">
-            I'm freelance web developer and graphic designer with more than 10 years of experience 
-            in making websites from scratch to deployment, as well as various print graphics. Started 
-            as a hobby, it very quickly became a full time job, which I enjoy up to this day. 
+            Jmenuji se Mgr. Miroslav Kokalanov a jsem web developerem a grafikem na volné noze s více
+            jak 10letou zkušeností v tvorbě webových stránek na klíč - od nakreslení přes programování až
+            po samotné nasazení na síť. Kromě webové grafiky se také zabývám i tiskovou grafikou. Vše odstartovalo
+            jako koníček, který se brzy změnil v mou hlavní pracovní náplň a neustále mne to velice baví.
           </p>
           <p class="paragraph animate " data-class="fadeInLeft">
-            As a result I have created 250+ fullpack websites, 3 generations of my own CMS framework, 
-            200+ print designs and I've worked with variety of clients from individuals to large companies 
-            and institutions.
+            V důsledku mám za sebou 250+ kompletně realizovaných webových projetků, 3 generace vlastního
+            redakčního systému, 200+ tiskových grafik a práci s širokou škálou zákazníků od jednotlivců 
+            až po velké společnosti a instituce. 
           </p>
           <p class="paragraph animate " data-class="fadeInRight">
-            What I find quite exciting in building websites, is that since web technologies are 
-            continuously evolving, you know that there always will be new teritories to unveal. 
+            To, co mne nejvíce těší na mojí práci je to, že webové technologie se neustále vyvíjejí a tím
+            jsou zaručena nová pole pro objevování.
           </p>
         </div>
       </div>
       <div class="content text-center content__grid content--right">
         <div class="wrapper">
           <h2 class="large-title large-title--pink large-title--shrinked large-title--on-right animate"
-            data-rel="" data-class="fadeInDown">Looking forward to work with you in my next project.</h2>
-          <div class="animate" data-class="flipInX">
+            data-rel="" data-class="fadeInDown">Těším se na budoucí spolupráci.</h2>
+          <div class="d-none d-lg-block animate" data-class="flipInX">
             <a href="#projects" class="button button--primary button--pushed scrollspy">
-              See my works
+              Ukázka prací
             </a>
           </div>
         </div>
@@ -136,60 +133,57 @@
     <section id="projects">
       <div class="content--divided">
         <div class="">
-          <h2 class="large-title large-title--contented large-title--colored">Projects</h2>
+          <h2 class="large-title large-title--contented large-title--colored">Projekty</h2>
           <h3 class="sub-title sub-title--explanation">
-            According to the graphic style, I roughly divide my design in 3 major periods:
+            Na základě grafického stylu jsou projekty rozdelené do tří etap:
           </h3>
         </div>
-        <div class="content__block content__block--divided content--ground">
 
+        <div class="content__block content__block--divided content--ground">
           <div class="project-box project-box--pushed popgallery" data-target="#galleryStoneAge">
             <div class="project-box__top">
-              <h3 class="large-title large-title--pink large-title--shrinked">Stone Age</h3>
-              <p class="sub-title__note">websites</p>
-              <h4 class="sub-title">2006<span class="sub-title__arrow"></span>2011</h4>
+              <h3 class="large-title project-box__title">Doba kamenná</h3>
+              <p class="sub-title__note">webové stránky</p>
+              <h4 class="sub-title sub-title--number">2006<span class="sub-title__arrow"></span>2011</h4>
             </div>
             <div class="project-box__bottom project-box--vertical-bar">
             </div>
           </div>
-          
           <div class="project-box project-box--pushed popgallery" data-target="#galleryGoldenEra">
             <div class="project-box__top">
-              <h3 class="large-title large-title--pink large-title--shrinked">Golden Era</h3>
-              <p class="sub-title__note">websites</p>
-              <h4 class="sub-title">2011<span class="sub-title__arrow"></span>2015</h4>
+              <h3 class="large-title project-box__title">Zlatá éra</h3>
+              <p class="sub-title__note">webové stránky</p>
+              <h4 class="sub-title sub-title--number">2011<span class="sub-title__arrow"></span>2015</h4>
             </div>
             <div class="project-box__bottom project-box--vertical-bar">
             </div>
           </div>
-          
           <div class="project-box project-box--pushed popgallery" data-target="#galleryModernTime">
             <div class="project-box__top">
-              <h3 class="large-title large-title--pink large-title--shrinked">Modern time</h3>
-              <p class="sub-title__note">websites</p>
-              <h4 class="sub-title">2015<span class="sub-title__arrow"></span>2018</h4>
+              <h3 class="large-title project-box__title">Moderní doba</h3>
+              <p class="sub-title__note">webové stránky</p>
+              <h4 class="sub-title sub-title--number">2015<span class="sub-title__arrow"></span>2018</h4>
             </div>
             <div class="project-box__bottom project-box--vertical-bar">
             </div>
           </div>
-          
         </div>
 
-        <div class="content__block content--colored content__block--divided">
+        <div class="d-none d-lg-grid content__block content--colored content__block--divided">
           <div class="project-box__description">
-            After short time of learning "how to walk" in webdesign, I started to 
-            experiment with details. Since there where no trends It was up to me to 
-            setup my own style for the upcoming Golden Age.
+            Po krátkem rozhližení jak to chodí ve webdesignu, jsem začal
+            experimenovat s detaily, abych našel svůj styl, který se následně
+            stane mým rukopisem pro nadcházející "zlatou éru".
           </div>
           <div class="project-box__description">
-            The period when I liked web graphics most. Clean style, but with a lot of 
-            graphic "invisible" details, gradients and almost completely free hand. 
-            No "responsive" limits, just imagination.
+            Období charakteristické čistým stylem grafiky, hodně "neviditelných" 
+            detailů a téměř volná ruka kreativity. Žádné "responzivní" omezení, 
+            jen imaginace.
           </div>
           <div class="project-box__description">
-            Responsive designs era. Forced to leave designs with a lot of grafic details,
-            I've started to create mobile-ready design in so called "flat-style", which the 
-            modern have requires.
+            Doba responzivných stránek. Bylo nutné opustit dosud použivaný styl a 
+            přízpůsobit se novým požadavkům. Grafika se změnila do tzv. "flat"
+            stylu a technický se dobře implementuje. 
           </div>
         </div>
 
@@ -199,17 +193,16 @@
     <!-- ================================ Contact ================================ -->
     <section id="contact">
       <div class="content--divided--footer">
-
         <div class="content__block content__block--divided--footer">
-          <div class="content content--left content__grid">
+          <div class="content content__footer--left content__grid">
             <div class="wrapper animate" data-class="fadeInLeft">
               <img src="images/webul-logored.svg" alt="webul" class="brand-logo__image brand-logo__image--right">
             </div>
           </div>
-          <div class="content content--right content__grid">
+          <div class="content content__footer--right content__grid">
             <div class="wrapper">
               <h2 class="brand-title animate" data-class="fadeInDown">WEB<span>UL</span></h2>
-              <h3 class="sub-title animate" data-class="fadeInUp">Mgr. Miroslav Kokalanov</h3>
+              <h3 class="sub-title sub-title--shrinked animate" data-class="fadeInUp">Mgr. Miroslav Kokalanov</h3>
               <br>
               <div class="animate" data-class="fadeInRight">
                 <h3 class="sub-title sub-title--smaller">Tel.: (+420) 737756057</h3>
@@ -220,41 +213,39 @@
             </div>
           </div>
         </div>
-
         <div class="content__footer">
           <div class="content content--no-top">
-            <h3 class="sub-title sub-title--footer animate" data-class="fadeIn">Courses and certificates</h3>
+            <h3 class="sub-title sub-title--footer animate" data-class="fadeIn">Kurzy a certifikáty</h3>
             <div class="certifications-box bb-gallery">
 
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-WRYRQUR8.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Object oriented PHP & MVC</a>
               </div>
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-M3KMEOGP.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Projects in Laravel: Learn Laravel Building 10 Projects</a>
               </div>
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-KQ3506C2.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Bootstrap 4 From Scratch With 5 projects</a>
               </div>
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-RDXVZRDD.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Modern JavaScript From The Beginning</a>
               </div>
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-0V924UMD.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Git a Web Developer Job: Mastering the Modern Workflow</a>
               </div>
-              <div class="col-lg-2 certifications-box__item">
-                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy course</h3>
+              <div class="certifications-box__item">
+                  <h3 class="certifications-box__item__auth animate" data-class="fadeInDown">Udemy</h3>
                   <a href="pictures/img-large/UC-8PL052KZ.jpg" class="certifications-box__item__cert animate" data-class="fadeInUp">Angular 5 (formerly Angular 2) - The Complete guide</a>
               </div>
 
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -263,8 +254,8 @@
 
       <div class="popgallery__modal popgallery__modal--hide" id="galleryStoneAge">
         <div class="popgallery__close">
-          <span class="popgallery__close__button">go back</span>
-          <em class="popgallery__title">Stone Age</em>
+          <span class="popgallery__close__button">zpět</span>
+          <em class="popgallery__title">Doba kamenná</em>
         </div>
         <div class="popgallery__content">
           <div class="bb-gallery row popgallery__content--wrap">
@@ -272,15 +263,31 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-augold.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-augold.jpg" data-at-900="pictures/img-medium/ref-augold.jpg" data-at-1200="pictures/img-large/ref-augold.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="AUGOLD" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-augold.jpg 300w, pictures/img-thumb-medium/ref-augold.jpg 600w, pictures/img-thumb-large/ref-augold.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-biokrasa.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-biokrasa.jpg" data-at-900="pictures/img-medium/ref-biokrasa.jpg" data-at-1200="pictures/img-large/ref-biokrasa.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="BIO KRÁSA" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-biokrasa.jpg 300w, pictures/img-thumb-medium/ref-biokrasa.jpg 600w, pictures/img-thumb-large/ref-biokrasa.jpg 900w" >
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-mistojakoznacka.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-mistojakoznacka.jpg" data-at-900="pictures/img-medium/ref-mistojakoznacka.jpg" data-at-1200="pictures/img-large/ref-mistojakoznacka.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Místo jako značka" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-mistojakoznacka.jpg 300w, pictures/img-thumb-medium/ref-mistojakoznacka.jpg 600w, pictures/img-thumb-large/ref-mistojakoznacka.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-vipcars.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-vipcars.jpg" data-at-900="pictures/img-medium/ref-vipcars.jpg" data-at-1200="pictures/img-large/ref-vipcars.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="VIP Cars" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-vipcars.jpg 300w, pictures/img-thumb-medium/ref-vipcars.jpg 600w, pictures/img-thumb-large/ref-vipcars.jpg 900w" >
               </a>
@@ -288,57 +295,65 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-krusnehory.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-krusnehory.jpg" data-at-900="pictures/img-medium/ref-krusnehory.jpg" data-at-1200="pictures/img-large/ref-krusnehory.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Krušné hory na kole" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-krusnehory.jpg 300w, pictures/img-thumb-medium/ref-krusnehory.jpg 600w, pictures/img-thumb-large/ref-krusnehory.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
-              <a href="pictures/img-large/ref-virtuosi.jpg" class="popgallery__thumb"
-                data-at-576="pictures/img-small/ref-virtuosi.jpg" data-at-900="pictures/img-medium/ref-virtuosi.jpg" data-at-1200="pictures/img-large/ref-virtuosi.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
-                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                  data-srcset="pictures/img-thumb-small/ref-virtuosi.jpg 300w, pictures/img-thumb-medium/ref-virtuosi.jpg 600w, pictures/img-thumb-large/ref-virtuosi.jpg 900w" >
-              </a>
-            </div> 
-            <div class="col-6 col-sm-4 col-lg-3">
-              <a href="pictures/img-large/ref-mistojakoznacka.jpg" class="popgallery__thumb"
-                data-at-576="pictures/img-small/ref-mistojakoznacka.jpg" data-at-900="pictures/img-medium/ref-mistojakoznacka.jpg" data-at-1200="pictures/img-large/ref-mistojakoznacka.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
-                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                  data-srcset="pictures/img-thumb-small/ref-mistojakoznacka.jpg 300w, pictures/img-thumb-medium/ref-mistojakoznacka.jpg 600w, pictures/img-thumb-large/ref-mistojakoznacka.jpg 900w" >
-              </a>
-            </div> 
-            <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-uklidkrokodyl.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-uklidkrokodyl.jpg" data-at-900="pictures/img-medium/ref-uklidkrokodyl.jpg" data-at-1200="pictures/img-large/ref-uklidkrokodyl.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Úklid Krokodýl" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-uklidkrokodyl.jpg 300w, pictures/img-thumb-medium/ref-uklidkrokodyl.jpg 600w, pictures/img-thumb-large/ref-uklidkrokodyl.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-virtuosi.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-virtuosi.jpg" data-at-900="pictures/img-medium/ref-virtuosi.jpg" data-at-1200="pictures/img-large/ref-virtuosi.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Virtuosi per musica di pianoforte" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-virtuosi.jpg 300w, pictures/img-thumb-medium/ref-virtuosi.jpg 600w, pictures/img-thumb-large/ref-virtuosi.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-cykloservis.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-cykloservis.jpg" data-at-900="pictures/img-medium/ref-cykloservis.jpg" data-at-1200="pictures/img-large/ref-cykloservis.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Cykloservis Ústí nad Labem" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-cykloservis.jpg 300w, pictures/img-thumb-medium/ref-cykloservis.jpg 600w, pictures/img-thumb-large/ref-cykloservis.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-gothshop.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-gothshop.jpg" data-at-900="pictures/img-medium/ref-gothshop.jpg" data-at-1200="pictures/img-large/ref-gothshop.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Gothshop" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-gothshop.jpg 300w, pictures/img-thumb-medium/ref-gothshop.jpg 600w, pictures/img-thumb-large/ref-gothshop.jpg 900w" >
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-niktour.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-niktour.jpg" data-at-900="pictures/img-medium/ref-niktour.jpg" data-at-1200="pictures/img-large/ref-niktour.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Cestovní kancelář Niktour" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-niktour.jpg 300w, pictures/img-thumb-medium/ref-niktour.jpg 600w, pictures/img-thumb-large/ref-niktour.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
-              <a href="pictures/img-large/ref-gothshop.jpg" class="popgallery__thumb"
-                data-at-576="pictures/img-small/ref-gothshop.jpg" data-at-900="pictures/img-medium/ref-gothshop.jpg" data-at-1200="pictures/img-large/ref-gothshop.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+              <a href="pictures/img-large/ref-mcrakosnicek.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-mcrakosnicek.jpg" data-at-900="pictures/img-medium/ref-mcrakosnicek.jpg" data-at-1200="pictures/img-large/ref-mcrakosnicek.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="MC Rákosníček" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                  data-srcset="pictures/img-thumb-small/ref-gothshop.jpg 300w, pictures/img-thumb-medium/ref-gothshop.jpg 600w, pictures/img-thumb-large/ref-gothshop.jpg 900w" >
+                  data-srcset="pictures/img-thumb-small/ref-mcrakosnicek.jpg 300w, pictures/img-thumb-medium/ref-mcrakosnicek.jpg 600w, pictures/img-thumb-large/ref-mcrakosnicek.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-muzeumdc.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-muzeumdc.jpg" data-at-900="pictures/img-medium/ref-muzeumdc.jpg" data-at-1200="pictures/img-large/ref-muzeumdc.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Oblastní muzeum v Děčíně" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-muzeumdc.jpg 300w, pictures/img-thumb-medium/ref-muzeumdc.jpg 600w, pictures/img-thumb-large/ref-muzeumdc.jpg 900w" >
               </a>
             </div> 
         
@@ -348,8 +363,8 @@
       
       <div class="popgallery__modal popgallery__modal--hide" id="galleryGoldenEra">
         <div class="popgallery__close">
-          <span class="popgallery__close__button">go back</span>
-          <em class="popgallery__title">Golden Era</em>
+          <span class="popgallery__close__button">zpět</span>
+          <em class="popgallery__title">Zlatá éra</em>
         </div>
         <div class="popgallery__content">
           <div class="bb-gallery row popgallery__content--wrap">
@@ -357,7 +372,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-emwacgroup.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-emwacgroup.jpg" data-at-900="pictures/img-medium/ref-emwacgroup.jpg" data-at-1200="pictures/img-large/ref-emwacgroup.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Portál pro uživatele PC" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-emwacgroup.jpg 300w, pictures/img-thumb-medium/ref-emwacgroup.jpg 600w, pictures/img-thumb-large/ref-emwacgroup.jpg 900w" >
               </a>
@@ -365,7 +380,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-calliditas.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-calliditas.jpg" data-at-900="pictures/img-medium/ref-calliditas.jpg" data-at-1200="pictures/img-large/ref-calliditas.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Calliditas SE" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-calliditas.jpg 300w, pictures/img-thumb-medium/ref-calliditas.jpg 600w, pictures/img-thumb-large/ref-calliditas.jpg 900w" >
               </a>
@@ -373,7 +388,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-cms.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-cms.jpg" data-at-900="pictures/img-medium/ref-cms.jpg" data-at-1200="pictures/img-large/ref-cms.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Česká mailingová společnost" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-cms.jpg 300w, pictures/img-thumb-medium/ref-cms.jpg 600w, pictures/img-thumb-large/ref-cms.jpg 900w" >
               </a>
@@ -381,7 +396,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-3art.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-3art.jpg" data-at-900="pictures/img-medium/ref-3art.jpg" data-at-1200="pictures/img-large/ref-3art.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="3Art" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-3art.jpg 300w, pictures/img-thumb-medium/ref-3art.jpg 600w, pictures/img-thumb-large/ref-3art.jpg 900w" >
               </a>
@@ -389,7 +404,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-vonka.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-vonka.jpg" data-at-900="pictures/img-medium/ref-vonka.jpg" data-at-1200="pictures/img-large/ref-vonka.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Radek Vonka" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-vonka.jpg 300w, pictures/img-thumb-medium/ref-vonka.jpg 600w, pictures/img-thumb-large/ref-vonka.jpg 900w" >
               </a>
@@ -397,7 +412,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-calliditas2.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-calliditas2.jpg" data-at-900="pictures/img-medium/ref-calliditas2.jpg" data-at-1200="pictures/img-large/ref-calliditas2.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Calliditas SE*" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-calliditas2.jpg 300w, pictures/img-thumb-medium/ref-calliditas2.jpg 600w, pictures/img-thumb-large/ref-calliditas2.jpg 900w" >
               </a>
@@ -405,7 +420,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-intur.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-intur.jpg" data-at-900="pictures/img-medium/ref-intur.jpg" data-at-1200="pictures/img-large/ref-intur.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Institut turismu" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-intur.jpg 300w, pictures/img-thumb-medium/ref-intur.jpg 600w, pictures/img-thumb-large/ref-intur.jpg 900w" >
               </a>
@@ -413,7 +428,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-mygastro.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-mygastro.jpg" data-at-900="pictures/img-medium/ref-mygastro.jpg" data-at-1200="pictures/img-large/ref-mygastro.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="MyGastro" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-mygastro.jpg 300w, pictures/img-thumb-medium/ref-mygastro.jpg 600w, pictures/img-thumb-large/ref-mygastro.jpg 900w" >
               </a>
@@ -421,7 +436,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-euresidence.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-euresidence.jpg" data-at-900="pictures/img-medium/ref-euresidence.jpg" data-at-1200="pictures/img-large/ref-euresidence.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="EU residence" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-euresidence.jpg 300w, pictures/img-thumb-medium/ref-euresidence.jpg 600w, pictures/img-thumb-large/ref-euresidence.jpg 900w" >
               </a>
@@ -429,7 +444,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-cutcolor.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-cutcolor.jpg" data-at-900="pictures/img-medium/ref-cutcolor.jpg" data-at-1200="pictures/img-large/ref-cutcolor.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Cut and Color" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-cutcolor.jpg 300w, pictures/img-thumb-medium/ref-cutcolor.jpg 600w, pictures/img-thumb-large/ref-cutcolor.jpg 900w" >
               </a>
@@ -441,8 +456,8 @@
 
       <div class="popgallery__modal popgallery__modal--hide" id="galleryModernTime">
         <div class="popgallery__close">
-          <span class="popgallery__close__button">go back</span>
-          <em class="popgallery__title">Modern Time</em>
+          <span class="popgallery__close__button">zpět</span>
+          <em class="popgallery__title">Moderní doba</em>
         </div>
         <div class="popgallery__content">
           <div class="bb-gallery row popgallery__content--wrap">
@@ -450,7 +465,7 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-cartaxi.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-cartaxi.jpg" data-at-900="pictures/img-medium/ref-cartaxi.jpg" data-at-1200="pictures/img-large/ref-cartaxi.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Car Taxi" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-cartaxi.jpg 300w, pictures/img-thumb-medium/ref-cartaxi.jpg 600w, pictures/img-thumb-large/ref-cartaxi.jpg 900w" >
               </a>
@@ -458,110 +473,123 @@
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-nejlevnejsidvere.jpg" class="popgallery__thumb"
                 data-at-576="pictures/img-small/ref-nejlevnejsidvere.jpg" data-at-900="pictures/img-medium/ref-nejlevnejsidvere.jpg" data-at-1200="pictures/img-large/ref-nejlevnejsidvere.jpg" >
-                <img src="images/loader.gif" class="lazyload" alt="popis" 
+                <img src="images/loader.gif" class="lazyload" alt="Nejlevnější dveře" 
                   data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
                   data-srcset="pictures/img-thumb-small/ref-nejlevnejsidvere.jpg 300w, pictures/img-thumb-medium/ref-nejlevnejsidvere.jpg 600w, pictures/img-thumb-large/ref-nejlevnejsidvere.jpg 900w" >
               </a>
             </div> 
             <div class="col-6 col-sm-4 col-lg-3">
               <a href="pictures/img-large/ref-svatbyvetruse.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-svatbyvetruse.jpg" data-at-900="pictures/img-medium/ref-svatbyvetruse.jpg" data-at-1200="pictures/img-large/ref-svatbyvetruse.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-              data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-              data-srcset="pictures/img-thumb-small/ref-svatbyvetruse.jpg 300w, pictures/img-thumb-medium/ref-svatbyvetruse.jpg 600w, pictures/img-thumb-large/ref-svatbyvetruse.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-cssd.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-cssd.jpg" data-at-900="pictures/img-medium/ref-cssd.jpg" data-at-1200="pictures/img-large/ref-cssd.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-cssd.jpg 300w, pictures/img-thumb-medium/ref-cssd.jpg 600w, pictures/img-thumb-large/ref-cssd.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-afcentrum.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-afcentrum.jpg" data-at-900="pictures/img-medium/ref-afcentrum.jpg" data-at-1200="pictures/img-large/ref-afcentrum.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-afcentrum.jpg 300w, pictures/img-thumb-medium/ref-afcentrum.jpg 600w, pictures/img-thumb-large/ref-afcentrum.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-noid.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-noid.jpg" data-at-900="pictures/img-medium/ref-noid.jpg" data-at-1200="pictures/img-large/ref-noid.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-noid.jpg 300w, pictures/img-thumb-medium/ref-noid.jpg 600w, pictures/img-thumb-large/ref-noid.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-camomile.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-camomile.jpg" data-at-900="pictures/img-medium/ref-camomile.jpg" data-at-1200="pictures/img-large/ref-camomile.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-camomile.jpg 300w, pictures/img-thumb-medium/ref-camomile.jpg 600w, pictures/img-thumb-large/ref-camomile.jpg 900w" >
-            </a>
-          </div>
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-apua.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-apua.jpg" data-at-900="pictures/img-medium/ref-apua.jpg" data-at-1200="pictures/img-large/ref-apua.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-apua.jpg 300w, pictures/img-thumb-medium/ref-apua.jpg 600w, pictures/img-thumb-large/ref-apua.jpg 900w" >
-            </a>
-          </div>
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-picabo.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-picabo.jpg" data-at-900="pictures/img-medium/ref-picabo.jpg" data-at-1200="pictures/img-large/ref-picabo.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-picabo.jpg 300w, pictures/img-thumb-medium/ref-picabo.jpg 600w, pictures/img-thumb-large/ref-picabo.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-branadocech.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-branadocech.jpg" data-at-900="pictures/img-medium/ref-branadocech.jpg" data-at-1200="pictures/img-large/ref-branadocech.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-branadocech.jpg 300w, pictures/img-thumb-medium/ref-branadocech.jpg 600w, pictures/img-thumb-large/ref-branadocech.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-hotel-alexandria.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-hotel-alexandria.jpg" data-at-900="pictures/img-medium/ref-hotel-alexandria.jpg" data-at-1200="pictures/img-large/ref-hotel-alexandria.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-hotel-alexandria.jpg 300w, pictures/img-thumb-medium/ref-hotel-alexandria.jpg 600w, pictures/img-thumb-large/ref-hotel-alexandria.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-advise.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-advise.jpg" data-at-900="pictures/img-medium/ref-advise.jpg" data-at-1200="pictures/img-large/ref-advise.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-advise.jpg 300w, pictures/img-thumb-medium/ref-advise.jpg 600w, pictures/img-thumb-large/ref-advise.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-darothore.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-darothore.jpg" data-at-900="pictures/img-medium/ref-darothore.jpg" data-at-1200="pictures/img-large/ref-darothore.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-darothore.jpg 300w, pictures/img-thumb-medium/ref-darothore.jpg 600w, pictures/img-thumb-large/ref-darothore.jpg 900w" >
-            </a>
-          </div> 
-          <div class="col-6 col-sm-4 col-lg-3">
-            <a href="pictures/img-large/ref-serviso.jpg" class="popgallery__thumb"
-              data-at-576="pictures/img-small/ref-serviso.jpg" data-at-900="pictures/img-medium/ref-serviso.jpg" data-at-1200="pictures/img-large/ref-serviso.jpg" >
-              <img src="images/loader.gif" class="lazyload" alt="popis" 
-                data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
-                data-srcset="pictures/img-thumb-small/ref-serviso.jpg 300w, pictures/img-thumb-medium/ref-serviso.jpg 600w, pictures/img-thumb-large/ref-serviso.jpg 900w" >
-            </a>
-          </div> 
-          
-          
-
+                data-at-576="pictures/img-small/ref-svatbyvetruse.jpg" data-at-900="pictures/img-medium/ref-svatbyvetruse.jpg" data-at-1200="pictures/img-large/ref-svatbyvetruse.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Svatby Větruše" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-svatbyvetruse.jpg 300w, pictures/img-thumb-medium/ref-svatbyvetruse.jpg 600w, pictures/img-thumb-large/ref-svatbyvetruse.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-cssd.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-cssd.jpg" data-at-900="pictures/img-medium/ref-cssd.jpg" data-at-1200="pictures/img-large/ref-cssd.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="OVV ČSSD Ústí nad Labem" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-cssd.jpg 300w, pictures/img-thumb-medium/ref-cssd.jpg 600w, pictures/img-thumb-large/ref-cssd.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-afcentrum.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-afcentrum.jpg" data-at-900="pictures/img-medium/ref-afcentrum.jpg" data-at-1200="pictures/img-large/ref-afcentrum.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="AF Centrum" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-afcentrum.jpg 300w, pictures/img-thumb-medium/ref-afcentrum.jpg 600w, pictures/img-thumb-large/ref-afcentrum.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-noid.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-noid.jpg" data-at-900="pictures/img-medium/ref-noid.jpg" data-at-1200="pictures/img-large/ref-noid.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Václav Noid Bárta" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-noid.jpg 300w, pictures/img-thumb-medium/ref-noid.jpg 600w, pictures/img-thumb-large/ref-noid.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-camomile.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-camomile.jpg" data-at-900="pictures/img-medium/ref-camomile.jpg" data-at-1200="pictures/img-large/ref-camomile.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Camomile Design" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-camomile.jpg 300w, pictures/img-thumb-medium/ref-camomile.jpg 600w, pictures/img-thumb-large/ref-camomile.jpg 900w" >
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-apua.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-apua.jpg" data-at-900="pictures/img-medium/ref-apua.jpg" data-at-1200="pictures/img-large/ref-apua.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="APUA" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-apua.jpg 300w, pictures/img-thumb-medium/ref-apua.jpg 600w, pictures/img-thumb-large/ref-apua.jpg 900w" >
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-picabo.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-picabo.jpg" data-at-900="pictures/img-medium/ref-picabo.jpg" data-at-1200="pictures/img-large/ref-picabo.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Picabo" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-picabo.jpg 300w, pictures/img-thumb-medium/ref-picabo.jpg 600w, pictures/img-thumb-large/ref-picabo.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-hotel-alexandria.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-hotel-alexandria.jpg" data-at-900="pictures/img-medium/ref-hotel-alexandria.jpg" data-at-1200="pictures/img-large/ref-hotel-alexandria.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Hotel Alessandria" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-hotel-alexandria.jpg 300w, pictures/img-thumb-medium/ref-hotel-alexandria.jpg 600w, pictures/img-thumb-large/ref-hotel-alexandria.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-branadocech.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-branadocech.jpg" data-at-900="pictures/img-medium/ref-branadocech.jpg" data-at-1200="pictures/img-large/ref-branadocech.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Brána do Čech" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-branadocech.jpg 300w, pictures/img-thumb-medium/ref-branadocech.jpg 600w, pictures/img-thumb-large/ref-branadocech.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-advise.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-advise.jpg" data-at-900="pictures/img-medium/ref-advise.jpg" data-at-1200="pictures/img-large/ref-advise.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="AD-VISE" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-advise.jpg 300w, pictures/img-thumb-medium/ref-advise.jpg 600w, pictures/img-thumb-large/ref-advise.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-darothore.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-darothore.jpg" data-at-900="pictures/img-medium/ref-darothore.jpg" data-at-1200="pictures/img-large/ref-darothore.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Darothore" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-darothore.jpg 300w, pictures/img-thumb-medium/ref-darothore.jpg 600w, pictures/img-thumb-large/ref-darothore.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-serviso.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-serviso.jpg" data-at-900="pictures/img-medium/ref-serviso.jpg" data-at-1200="pictures/img-large/ref-serviso.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="MAS Serviso" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-serviso.jpg 300w, pictures/img-thumb-medium/ref-serviso.jpg 600w, pictures/img-thumb-large/ref-serviso.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-fkusti.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-fkusti.jpg" data-at-900="pictures/img-medium/ref-fkusti.jpg" data-at-1200="pictures/img-large/ref-fkusti.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="FK Ústí nad Labem" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-fkusti.jpg 300w, pictures/img-thumb-medium/ref-fkusti.jpg 600w, pictures/img-thumb-large/ref-fkusti.jpg 900w" >
+              </a>
+            </div> 
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="pictures/img-large/ref-ocniordinace.jpg" class="popgallery__thumb"
+                data-at-576="pictures/img-small/ref-ocniordinace.jpg" data-at-900="pictures/img-medium/ref-ocniordinace.jpg" data-at-1200="pictures/img-large/ref-ocniordinace.jpg" >
+                <img src="images/loader.gif" class="lazyload" alt="Oční ordinace Lovosice" 
+                  data-sizes="(max-width:320px) 300px, (max-width: 576px) 600px, 900px" 
+                  data-srcset="pictures/img-thumb-small/ref-ocniordinace.jpg 300w, pictures/img-thumb-medium/ref-ocniordinace.jpg 600w, pictures/img-thumb-large/ref-ocniordinace.jpg 900w" >
+              </a>
+            </div> 
 
           </div>
         </div>
@@ -572,12 +600,11 @@
     <!-- ================================= Scripts ================================= -->
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/baguetteBox.min.js"></script>
-    <script src="./js/noframework.waypoints.min.js"></script>
-    <script src="./js/lazysizes.min.js" async=""></script>
-    <script src="./js/jquery.typetype.min.js"></script>
+    <script src="./js/bootstrap.min.js" async defer></script>
+    <script src="./js/baguetteBox.min.js" async defer></script>
+    <script src="./js/noframework.waypoints.min.js" async defer></script>
+    <script src="./js/lazysizes.min.js" async defer></script>
+    <script src="./js/jquery.typetype.min.js" async defer></script>
     <script src="./js/app.min.js"></script>
-
   </body>
 </html>

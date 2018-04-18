@@ -1,18 +1,50 @@
 .nav-simple {
-    padding-top: 3rem;
+    padding-top: 1rem;
+    
+    @include atSmall {
+        padding-top: 1.5rem;
+    }
+
+    @include atLarge {
+        padding-top: 3rem;
+    }
 
     &__item {
         display: inline-block;
-        padding: 0.5em 1.5em;
+        padding: 0 0.6rem;
+
+        @include atSmall {
+            padding: 0 0.8em;
+        }
+        
+        @include atMedium {
+            padding: 0.2em 1em;
+        }
+
+        @include atLarge {
+            padding: 0.5em 1.5em;
+        }
     }
 
     &__link {
         color: $SimpleNavLink;
         display: inline-block;
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 0.2em;
         transition-duration: 0.5s;
+        
+        @include atSmall {
+            font-size: 1.2rem;
+        }
+
+        @include atMedium {
+            font-size: 1.25rem;
+        }
+
+        @include atLarge {
+            font-size: 1.3rem;
+        }
 
     }
 
@@ -20,6 +52,10 @@
         color: $CodePink; 
         transform: scale(1.3); 
         text-decoration: none;
+    }
+
+    &__link:focus {
+        outline: none;
     }
 
     &.fadeInUp {

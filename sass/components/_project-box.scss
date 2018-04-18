@@ -1,8 +1,18 @@
 .project-box {
-    display: grid;
-    grid-template-rows: 150px auto;
-    height: 100%;
-    position: relative;
+    cursor: pointer;
+    padding: 1rem 0;
+    
+    @include atMedium{
+        padding: 0;
+        display: grid;
+        grid-template-rows: 110px 110px;
+        height: 100%;
+        position: relative;
+    }
+
+    @include atLarge {
+        grid-template-rows: 150px auto;
+    }
 
     &__top {
         text-align: center;
@@ -24,12 +34,15 @@
     }
 
     &__description {
-        width: 60%;
         margin: 0 auto;
         color: #fff;
-        padding: 2rem 0;
         font-weight: 500;
         font-size: 1rem;
+
+        @include atMedium {
+            width: 60%;
+            padding: 2rem 0;
+        }
     }
 
     &--vertical-bar {
@@ -38,26 +51,58 @@
 
     }
 
-    &--pushed {
-        top: 110px;
-        transition: 0.5s ease-out;
-       
+    &__title {
+        font-size: 1.8rem;
+        color: $Pink;
+        padding: 0;
+        margin: 0;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        
+        @include atSmall {
+            font-size: 1.4rem;
+        }
+
+        @include atMedium {
+            font-size: 2rem;
+            padding: 0.5rem 0 0 0;
+        }
+
+        @include atLarge {
+            font-size: 3rem;
+        }
     }
 
-    &--pushed:hover {
-        top: 30px;
-        cursor: pointer;
-
-        .project-box__top::before {
-            top: 0;
-            left: 47.5%;
-            content: "";
-            width: calc(5% + 4px);
-            height: 100%;
-            position: absolute;
-            border-bottom: 5px solid $Pink;
-            display: block;
-            z-index: 0;
+    @include atMedium {
+        &--pushed {
+            top: 10px;
+            transition: 0.5s ease-out;
         }
+    
+        &--pushed:hover {
+            top: -10px;
+    
+            .project-box__top::before {
+                top: 0;
+                left: 47.5%;
+                content: "";
+                width: calc(5% + 4px);
+                height: 100%;
+                position: absolute;
+                border-bottom: 5px solid $Pink;
+                display: block;
+                z-index: 0;
+            }
+        }
+    }
+
+    @include atLarge {
+        &--pushed {
+            top: 110px;
+        }
+
+        &--pushed:hover {
+            top: 30px;
+        }
+        
     }
 }

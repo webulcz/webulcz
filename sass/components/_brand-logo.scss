@@ -1,6 +1,6 @@
 .brand-logo {
     display: block;
-    width: 92px;
+    width: 46px;
     margin: 0 auto;
 
     &__image {
@@ -8,10 +8,26 @@
         height: auto;
 
         &--right {
-            width: 80%;
-            float: right;
-            max-height: 420px;
+            max-height: 50px;
+
+            @include atMedium {
+                width: 80%;
+                float: right;
+                max-height: 420px;
+            }
         }
+    }
+
+    @include atSmall {
+        width: 62px;
+    }
+
+    @include atMedium {
+        width: 78px;
+    }
+
+    @include atLarge {
+        width: 92px;
     }
 
 }

@@ -1,12 +1,29 @@
 .certifications-box {
-    display: flex; 
-    justify-content:space-evenly;
-    flex-direction: row;
+
+    @include atSmall {
+        display: grid; 
+        justify-content:stretch;
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+    
+    @include atLarge {
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 
 
     &__item {
-        display: grid;
-        grid-template-rows:  1fr 3fr;
+        line-height:  1;
+        padding-bottom: 2rem;
+
+        @include atSmall {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        @include atLarge {
+            display: grid;
+            grid-template-rows:  1fr 3fr;
+        }
 
         &__text {
             padding: 0 0.5rem;
@@ -15,12 +32,23 @@
         &__auth {
             font-size: 1rem;
             color: $Pink;
+            line-height: 1;
+            margin-bottom: 0;
+
+            @include atLarge {
+                line-height: 1.2;
+                margin-bottom: 0.5rem;
+            }
         }
 
         &__cert {
             font-size: 1rem;
             color: $Subtitle;
             font-weight: bold;
+
+            @include atLarge {
+                line-height: 1.5;
+            }
         }
     }
 }

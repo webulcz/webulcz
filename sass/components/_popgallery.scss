@@ -73,11 +73,18 @@
     }
 
     &__title {
-        padding: 0.6rem 2rem;
         float: right; 
         font-weight: 100;
         color: $Pink;
         font-style: normal;
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+        
+        
+        @include atLarge {
+            padding: 0.6rem 2rem;
+            font-size: 1.2rem;
+        }
     }
 
     &__content {
@@ -86,9 +93,17 @@
         overflow-y: auto;
         width: 100%;
         box-sizing: border-box;
-        padding: 4rem 2rem 2rem 2rem;
         top: 0;
         left: 0;
+        padding: 4rem 0.5rem 1rem 0.5rem;
+        
+        @include atMedium {
+            padding: 4rem 1rem 1.5rem 1rem;
+        }
+
+        @include atLarge {
+            padding: 4rem 2rem 2rem 2rem;
+        }
 
         &--wrap {
             max-width: 1580px;
@@ -102,11 +117,10 @@
     }
 
     &__thumb {
-        
         padding: 1px;
         box-sizing: border-box;
         display: block;
-
+        
         img {
             max-width: 100%;
             display: block;

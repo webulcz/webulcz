@@ -1,4 +1,11 @@
 #projects {
     background-color: $MainBack;
-   
+    min-height: auto;
+    
+    @include atMedium {
+        overflow-x: hidden;
+    }
+    @include atLarge {
+        min-height: 100vh;
+    }
 }

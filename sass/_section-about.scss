@@ -1,37 +1,37 @@
 #about {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr; 
     position: relative;
     color: #fff;
-    // font-size: 1.7rem;
 
-    &::before {
-        content: "";
-        position: fixed;
-        width: 100%;
+    @include atLarge {
+        display: grid;
         height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -4;
-        opacity: 0.1;
-        background: url("images/code1200.jpg") no-repeat bottom right;
-        animation-name: aboutBack;
-        animation-duration: 180s;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;    
-        animation-iteration-count: infinite;
-        background-position-y: -100px;
+        grid-template-columns: 1fr 1fr; 
+
+        &::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -4;
+            opacity: 0.1;
+            background: url("images/code1200.jpg") no-repeat bottom right;
+            animation-name: aboutBack;
+            animation-duration: 180s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;    
+            animation-iteration-count: infinite;
+            background-position-y: -100px;
+        }
+    
+        @keyframes aboutBack {
+            0% {background-size: 150%;}
+            100% {background-size: 320%;}
+        }  
+    
     }
-
-    @keyframes aboutBack {
-        0% {background-size: 150%;}
-        100% {background-size: 320%;}
-    }  
-    
-
-    
 
 }
 

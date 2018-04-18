@@ -1,55 +1,75 @@
 .content {
-    padding: 4rem;
+    padding: 2rem 1.5rem;
     position: relative;
+    
+    @include atMedium {
+        padding: 3rem;
+    }
+
+    @include atLarge {
+        padding: 4rem;
+    }
 
     &__grid {
-        display: grid;
-        align-items: center;
+
+        @include atMedium {
+            display: grid;
+            align-items: center;
+        }
     }
 
     &__grid--top {
         display: grid;
     }
 
-
     &__back::before {
         content:"";
-        // opacity: 1;
         position: absolute;
         z-index: -1;
-        // top: 40vh;
         top: 0;
         left: 0;
         background-image: url("images/webul-logored.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
-        // background-color: $DarkPink;
         background-color: $DarkPink9;
         width: 100%; 
         height: 100%;
-        // background-size: 10%;
         animation-name: testBefore;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
     }
-
+    
     @keyframes testBefore {
         0% {background-size: 10%; opacity: 0; }
         100% {background-size: 420%; opacity: 0.7; background-position-x: 10vw; background-position-y: -100vh;}
-        // 0% {top: 50vh; height: 0%; width: 0%; opacity: 0}
-        // 80% {opacity: 0.7;}
-        // 100% {top: 0vh; height: 100%; width: 100%; opacity: 0.75;}
     } 
+
+    @include atSmall {
+        @keyframes testBefore {
+            0% {background-size: 10%; opacity: 0; }
+            100% {background-size: 340%; opacity: 0.7; background-position-x: 10vw; background-position-y: -100vh;}
+        } 
+    }
+
+    @include atMedium {
+        @keyframes testBefore {
+            0% {background-size: 10%; opacity: 0; }
+            100% {background-size: 420%; opacity: 0.7; background-position-x: 10vw; background-position-y: -100vh;}
+        } 
+    }
     
  
     &--divided {
-        display: grid;
-        height: 100vh;
-        grid-template-rows: 1fr 2fr 1fr;
         position: relative;
         z-index: 1;
+
+        @include atLarge {
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: 1fr 2fr 1fr;
+        }
     }
 
     &__block {
@@ -57,57 +77,120 @@
     }
 
     &__block--divided {
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        height: 100%;        
+
+        @include atSmall {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            //height: 100%;    
+        }
+
+        @include atLarge {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            height: 100%;    
+        }
+
     }
 
     &__block--divided--footer {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 1fr 1fr; 
-        position: relative;        
+        @include atMedium{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr; 
+            position: relative;        
+        }
     }
 
     &__footer {
         background-color: $MainBack;
         height: 100%;
+
+        &--left {
+            padding-bottom: 0;
+
+            @include atMedium {
+                padding-bottom: 2rem;
+            }
+        }
+
+        &--right {
+            padding-top: 0;
+
+            @include atMedium {
+                padding-top: 2rem;
+            }
+        }
     }
+
 
     &--colored {
         background-color: $DarkPink;
     }
 
     &--ground {
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("images/groundoutlinered.svg") bottom left repeat-x;
-            background-size: contain;
-            background-position-x: 0vw;
-            animation: groundAnimation 24s infinite forwards linear;
+        padding-bottom: 2.5rem;
+
+        @include atMedium {
+            padding-bottom: 0rem;
+            overflow-y: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url("images/groundoutlinered.svg") bottom left repeat-x;
+                background-size: contain;
+                background-position-x: 0vw;
+            }
+            
         }
 
-        @keyframes groundAnimation {
-            0% {background-position-x: 100vw;}
-            100% {background-position-x: 0vw;}
+        @include atLarge {
+
+            &::before {
+                animation: groundAnimation 24s infinite forwards linear;
+            }
+    
+            @keyframes groundAnimation {
+                0% {background-position-x: 100vw;}
+                100% {background-position-x: 0vw;}
+            }
         }
     }
 
     &--divided--footer {
-        display: grid;
-        height: 100vh;
-        grid-template-rows: 3fr 1fr;
+        text-align: center;
+
+        @include atMedium {
+            text-align: left;
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 3fr 1fr;
+        }
     }
 
     &--no-top {
         padding-top: 0;
         padding-bottom: 2rem;
     }
-    
+
+    &--left {
+
+        @include atMedium {
+            min-height: auto;
+        }
+
+        @include atLarge {
+            min-height: 100vh;
+        }
+    }
+
+    &--right {
+        max-height: 100vh;
+    }
+
 
 }

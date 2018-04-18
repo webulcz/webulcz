@@ -66,21 +66,27 @@ $(document).ready(function(){
 
     // Animation trigger
     function animationTrigger(section,timeout,selector){
-        let sel = " .animate";
-        if (selector !== undefined) sel = selector;
-        let tmo = 0;
-        if (timeout !== undefined) tmo = timeout;
+        let ww = window.innerWidth;
 
-        let objs =  $(section + sel);
-        setTimeout(function(){
-            objs.each(function(){
-                if ($(this).hasClass("animate")) {
-                    $(this).removeClass("animate");
-                    $(this).addClass("animated " + $(this).attr("data-class"));
-                }
+        // Medium and large only
+        if (ww >= 768) {
+            let sel = " .animate";
+            if (selector !== undefined) sel = selector;
+            let tmo = 0;
+            if (timeout !== undefined) tmo = timeout;
+    
+            let objs =  $(section + sel);
+            setTimeout(function(){
+                objs.each(function(){
+                    if ($(this).hasClass("animate")) {
+                        $(this).removeClass("animate");
+                        $(this).addClass("animated " + $(this).attr("data-class"));
+                    }
+    
+                })
+            },tmo);
+        }
 
-            })
-        },tmo);
     };
 
     // About add background
@@ -92,7 +98,24 @@ $(document).ready(function(){
     
 
 
-    // ============== Waypoint about 15 ==============
+    // ============== Waypoint home 20 ==============
+    // resize bug fix
+    var waypoint_home = new Waypoint({
+        element: document.querySelector("#home"),
+        handler: function(direction) {
+            if (direction == "up") { 
+                if (!$("#home .brand-logo").hasClass("animated")) {
+                    finishSplashIntro(0,100);
+                }
+                
+            }
+            else {
+            }
+        },
+        offset: "-20%"
+    });
+
+    // ============== Waypoint about 20 ==============
     var waypoint_about = new Waypoint({
         element: document.querySelector("#about"),
         handler: function(direction) {
@@ -102,24 +125,24 @@ $(document).ready(function(){
                 // AboutTitle_type();
                 animationTrigger("#about .large-title--on-right",1000,"");
                 animationTrigger("#about .content--right",2000);
-             }
+            }
             else {
             }
         },
-        offset: "15%"
+        offset: "20%"
     });
 
-    // ============== Waypoint contact 15 ==============
+    // ============== Waypoint contact 20 ==============
     var waypoint_contact = new Waypoint({
         element: document.querySelector("#contact"),
         handler: function(direction) {
             if (direction == "down") { 
                 animationTrigger("#contact",0);
-             }
+            }
             else {
             }
         },
-        offset: "15%"
+        offset: "20%"
     });
     
     // function animationStart() {
@@ -151,12 +174,18 @@ $(document).ready(function(){
     }
 
 
-
+    // ===============================================
     // ============== Splash animations ==============
-    
-    // ENTRY POINT
-    // triggerSpinning();
-    finishSplashIntro();
+    // ===============================================
+
+    // ENTRY POINT 
+    // Intro on large only
+    let ww = window.innerWidth;
+    if (ww >= 992) {
+        triggerSpinning();
+    } else {
+        finishSplashIntro(0,100);
+    }
 
 
     // Trigger spin
@@ -284,16 +313,25 @@ $(document).ready(function(){
     }
 
     // Finish splash intro and triggers home
-    function finishSplashIntro(){
+    function finishSplashIntro(t1,t2){
+        let time1 = 1500, time2 = 1000;
+        if (typeof t1 != "undefined") time1 = t1;
+        if (typeof t2 != "undefined") time2 = t2;
+
         enableScrolling();
-        let vid = document.getElementById("homevideo");
-        vid.play();
+
+        if (window.innerWidth >= 992) {
+            let vid = document.getElementById("homevideo");
+            vid.setAttribute("src",vid.getAttribute("data-rel"));
+            vid.play();
+        }
+
         let obj = $(".splash");
         let home = $(".home");
         //$(window).scrollTop(0);
         obj.addClass("animated fadeOut");
-        setTimeout(function(){ obj.addClass("d-none"); },2000);
-        animationTrigger(".home",1500);
+        setTimeout(function(){ obj.addClass("d-none"); },time1);
+        animationTrigger(".home",time2);
     }
 
     $(".splash__skip").on("click", finishSplashIntro);
@@ -304,8 +342,20 @@ $(document).ready(function(){
     $("body").keyup(function(e){
         if(e.which == 27){
             let obj = $(".splash");
-            if (!obj.hasClass("animated")) 
-            finishSplashIntro();
+            if (!obj.hasClass("animated")) {
+                finishSplashIntro();
+            }
+
+            if ($("#menuoverlay").is(":visible")) {
+                $("#nav-icon1").trigger("click");
+            }
+        }
+        if(e.which == 8){
+            let b = $("body");
+            if (b.hasClass("popgallery--body-shrink") && !b.hasClass("baguetteBox-open")) {
+                e.preventDefault();
+                $(".popgallery__close__button").trigger("click");
+            }
         }
 
     });    

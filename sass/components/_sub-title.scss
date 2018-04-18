@@ -5,27 +5,48 @@
     // font-weight: bold;
 
     &__note {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0;
         margin-bottom: 0;
-        margin-top: -0.5rem;
+        margin-top: -0.2rem;
+        
+        @include atMedium{
+            font-size: 1rem;
+            margin-top: -0.5rem;
+        }
     }
 
     &__arrow {
         display: inline-block;
         background: url("images/agearrowred.svg") center center no-repeat;
         background-size: contain;
-        width: 1rem;
+        width: 0.9rem;
         height: 0.9rem;
         margin: 0 0.6rem;
+        position: relative;
+        top: 2px;
+        
+        @include atMedium{
+            width: 1rem;
+            top: 0;
+        }
     }
 
     &--explanation {
         text-align: center;
         font-size: 1rem;
-        position: relative;
-        top: 2.5rem;
         color: $MainColor;
+        padding: 1rem 1.5rem;
+
+        @include atSmall {
+            padding-top: 2rem;
+        }
+        
+        @include atLarge{
+            position: relative;
+            top: 2.5rem;
+            padding: 0 1.5rem;
+        }
     }
 
     &--smaller {
@@ -36,6 +57,26 @@
     &--footer {
         text-align: center;
         font-size: 1rem;
-        padding: 2rem 0;        
+        padding: 1rem 0;  
+        
+        @include atSmall {
+            padding: 2rem 0;        
+        }
+
+    }
+
+    &--shrinked {
+        font-size: 1rem;
+        @include atLarge {
+            font-size:inherit;
+        }
+    }
+
+    &--number {
+        font-size: 1.2rem;
+
+        @include atMedium {
+            font-size: 1.5rem;
+        }
     }
 }

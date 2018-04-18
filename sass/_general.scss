@@ -13,14 +13,24 @@ body {
     font-weight: lighter;
     background-color: $MainBack; 
     color: $MainColor;
+    overflow-x: hidden;
 }
 
 section {
-    min-height: 100vh;
     position: relative;
+
+    @include atLarge {
+        min-height: 100vh;
+    }
 }
 
-.animate {visibility: hidden;}
+.animate {
+    visibility: visible; 
+    
+    @include atMedium {
+        visibility: hidden;
+    }
+}
 
 a {
     color: $SimpleNavLink;
@@ -29,10 +39,20 @@ a {
         color: $Pink;
         text-decoration: none;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .baguetteBox-button:focus {
     outline: none;
+}
+
+.d-lg-grid {
+    @include atLarge {
+        display: grid !important;
+    }
 }
 
 

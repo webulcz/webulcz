@@ -2,16 +2,24 @@
     background-color: $ContactBack;
     position: relative;
 
-    &::before {
-        background: url("images/contactback.jpg") no-repeat;
-        background-size: cover;
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        opacity: 0.05;
+    @include atMedium {
+        &::before {
+            background: url("images/contactback-medium.jpg") no-repeat;
+            background-size: cover;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            opacity: 0.05;
+        }
+    }
+
+    @include atLarge {
+        &::before {
+            background: url("images/contactback.jpg") no-repeat;
+        }
     }
 
 

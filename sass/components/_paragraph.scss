@@ -1,4 +1,14 @@
 .paragraph {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0rem;
+    font-size: 1rem;    
+
+    @include atSmall {
+        font-size: 1.2rem;
+    }
+    
+    @include atLarge {
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;    
+    }
 }
 

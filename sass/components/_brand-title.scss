@@ -2,7 +2,7 @@
     color: $Pink;
     font-family: $TitleFont;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
 
@@ -11,7 +11,27 @@
     &__subtitle {
         color: $Subtitle;
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1;
+
+        @include atSmall {
+            font-size: 1.2rem;
+        }
+
+        @include atLarge {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include atSmall {
+        font-size: 3.5rem;
+    }
+
+    @include atMedium {
+        font-size: 4.2rem;
+    }
+
+    @include atLarge {
+        font-size: 5rem;
     }
 }

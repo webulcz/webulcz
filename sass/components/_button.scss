@@ -9,12 +9,17 @@
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: 0.7rem 2rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     font-family: $TitleFont;
     transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     margin: 0.5rem;
+    
+    @include atLarge {
+        padding: 0.7rem 2rem;
+        font-size: 1.2rem;
+    }
 
     &:hover {
         text-decoration: none;
