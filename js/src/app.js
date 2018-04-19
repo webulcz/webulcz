@@ -225,6 +225,16 @@ $(document).ready(function(){
     function triggerSplashStart(){
         let code = $(".splash__start-line");
         code.removeClass("invisible").addClass("splash--blinking");
+
+        // Preload video
+        if (window.innerWidth >= 992) {
+            let vid = document.getElementById("homevideo");
+            let s = vid.getAttribute("src");
+            if (s === null) {
+                vid.setAttribute("src",vid.getAttribute("data-rel"));
+            }
+        }
+        
     }
     // triggerSplashStart();
    
@@ -322,7 +332,10 @@ $(document).ready(function(){
 
         if (window.innerWidth >= 992) {
             let vid = document.getElementById("homevideo");
-            vid.setAttribute("src",vid.getAttribute("data-rel"));
+            let s = vid.getAttribute("src");
+            if (s === null) {
+                vid.setAttribute("src",vid.getAttribute("data-rel"));
+            }
             vid.play();
         }
 
@@ -361,21 +374,22 @@ $(document).ready(function(){
     });    
 
 
-    // ============== Gallery ==============
-    baguetteBox.run(".bb-gallery", {
-        // captions: function(element) {
-        //     return element.getElementsByTagName('img')[0].alt;
-        // }
-        // fullScreen : true
-        onChange: ()=>{
-            $("#baguetteBox-overlay").scrollTop(0);   
-        }
-
-    });    
 
 
     // ============== Pop Gallery ==============
     $(".popgallery").click(function(e){
+    // ============== Gallery ==============
+        baguetteBox.run(".bb-gallery", {
+            // captions: function(element) {
+            //     return element.getElementsByTagName('img')[0].alt;
+            // }
+            // fullScreen : true
+            onChange: ()=>{
+                $("#baguetteBox-overlay").scrollTop(0);   
+            }
+        });    
+
+
         let that = $(this);
         let modalTarget = $(that.data("target"));
         $("body").addClass("popgallery--body-shrink");

@@ -26,7 +26,7 @@
       Header append Vary Accept-Encoding
     </FilesMatch>
 
-    <FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+    <FilesMatch "\.(js|css|gif|svg|jpg|flv|ico|pdf|avi|mov|ppt|doc|mp3|mp4|wmv|wav)$">
       Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>   
 </IfModule>

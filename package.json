@@ -1,17 +1,22 @@
 {
   "name": "generic",
-  "version": "1.0.0",
-  "description": "Generic JSON file by webul",
+  "version": "1.0.1",
+  "description": "Starter pack for Gulp/CSS and Webpack/JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "build": "webpack",
+    "start": "gulp",
+    "webpack": "webpack-dev-server --output-public-path=/js/"
   },
   "author": "MK",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
@@ -19,6 +24,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   }
 }
