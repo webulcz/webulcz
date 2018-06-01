@@ -426,11 +426,13 @@ $(document).ready(function(){
     // });
 
     // ============== Gallery ==============
-    // baguetteBox.run(".bb-gallery", {
+    // baguetteBox.run(".certifications-box.bb-gallery", {
     // captions: function(element) {
     //     return element.getElementsByTagName('img')[0].alt;
     // }
     // });
+
+    baguetteBox.run(".certifications-box.bb-gallery");
   
 });
 

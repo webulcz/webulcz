@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/baguetteBox.min.css" media="async!" onload="this.media='all'">
     <link rel="stylesheet" href="./css/animate.min.css" media="async!" onload="this.media='all'">
     <link rel="stylesheet" href="./themes/maintheme/styles.css">
+    <link rel="stylesheet" href="./themes/maintheme/iestyles.css">
   </head>
   
   <body>
@@ -597,14 +598,38 @@
 
     </div>
 
+    <!-- ================================= IE ================================= -->
+    <div class="iemessage">
+      <div class="iemessage__container">
+        Vážený návštěvníku,<br>
+        Váš webový prohlížeč je velice zastaralý.<br>
+        Prosím, použijte 
+        <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126" target="_blank">novější verzi</a>,
+        nebo zvolte kvalitnější prohlížeč (
+        <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>, 
+        <a href="https://www.mozilla.cz/stahnout/firefox/" target="_blank">Firefox</a>, 
+        <a href="https://www.opera.com/cs" target="_blank">Opera</a> ).
+      </div>
+    </div>
+
     <!-- ================================= Scripts ================================= -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5741687-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-5741687-13');
+    </script> -->
+
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/noframework.waypoints.min.js"></script>
-    <script src="./js/baguetteBox.min.js" async defer></script>
-    <script src="./js/lazysizes.min.js" async defer></script>
-    <script src="./js/jquery.typetype.min.js" async defer></script>
+    <script src="./js/baguetteBox.min.js" defer></script>
+    <script src="./js/lazysizes.min.js" defer></script>
+    <script src="./js/jquery.typetype.min.js" defer></script>
     <script src="./js/app.min.js"></script>
+
   </body>
 </html>

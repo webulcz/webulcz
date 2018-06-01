@@ -1,0 +1,28 @@
+@import "basic/variables";
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    /* Put your IE-only styles here. Works for IS 10 & IE 11*/
+    div, section {
+        display:none !important;
+    }
+    
+    html,body {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .iemessage {
+        display: table !important;
+        width: 100%;
+        height:100%;
+        text-align: center;
+        font-weight: 500;
+    
+        &__container {
+            display: table-cell !important;
+            vertical-align: middle;
+        }
+    }
+ }
+
