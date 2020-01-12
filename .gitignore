@@ -16,6 +16,7 @@ pic-thumb3/
 *.vi
 *~
 *.sass-cache
+
 node_modules/
 .tmp/
 
